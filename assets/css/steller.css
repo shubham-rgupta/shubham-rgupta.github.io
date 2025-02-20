@@ -10987,7 +10987,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 992px) {
   .section-title {
-    font-size: 30px;
+    font-size: 40px;
   }
 }
 
@@ -11360,7 +11360,7 @@ pre {
 }
 
 .navbar .navbar-nav .nav-link {
-  font-size: 13px;
+  font-size: 15px;
   font-weight: bold;
   margin: 0 10px;
   -webkit-transition: all 0.3s;
