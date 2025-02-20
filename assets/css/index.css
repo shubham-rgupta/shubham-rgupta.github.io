@@ -1,0 +1,39 @@
+.btn-with-popup .title-popup{
+    display: none;
+}
+
+.justify{
+    text-align: justify;
+}
+
+@media only screen and (min-width: 769px){
+    /* I'm Yours Popup */
+    .btn-with-popup {
+        position: relative;
+    }
+
+    .btn-with-popup .title-popup {
+        position: absolute;
+        top: calc(50% + 0px);
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        background-color: #343a40;
+        padding: 5px 10px;
+        height: 100%;
+        width: calc(100% + 100px);
+        border-radius: 10px;
+        transition: 0.2s;
+        visibility: hidden;
+        pointer-events: none;
+        transform-origin: center;
+        font-size: 15px;
+        line-height: 30px;
+        display: block;
+    }
+
+    .btn-with-popup:hover .title-popup{
+        visibility: visible;
+        top: calc(50% - 45px);
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
