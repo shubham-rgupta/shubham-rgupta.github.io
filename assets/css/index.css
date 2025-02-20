@@ -41,6 +41,7 @@
 		flex-direction: row;
 		align-items: center;
 	}
+
 	.skill-item {
 		background: white;
 		color: black;
@@ -52,11 +53,11 @@
 		border: 1px solid #ccc;
 	}
 
-	.skill-item:hover {
-		background: #FF7A57;
-		color: white;
-		transform: scale(1.1);
-	}
+		.skill-item:hover {
+			background: #FF7A57;
+			color: white;
+			transform: scale(1.1);
+		}
 	/* Project title Hover Effect: Glow */
 	.project-title:hover {
 		transform: scale(1.05);
@@ -79,6 +80,7 @@
 		gap: 15px;
 		padding: 10px 0;
 	}
+
 	.grid-item {
 		background: white;
 		color: black;
@@ -89,6 +91,7 @@
 		font-weight: bold;
 		transition: background 0.3s ease, transform 0.3s ease, color 0.3s ease;
 	}
+
 		.grid-item:hover {
 			background: #FF7A57;
 			color: white;
@@ -119,6 +122,7 @@
 		font-weight: bold;
 		transition: background 0.3s ease, transform 0.3s ease, color 0.3s ease;
 	}
+
 	.responsibilities-grid {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr); /* 3 columns by default */
@@ -264,4 +268,26 @@
 	color: #777;
 	font-size: 14px;
 	margin-bottom: 10px;
+}
+
+.education-card {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 15px;
+	border-left: 4px solid #FF7A57;
+	border-right: 4px solid #FF7A57;
+	background: rgba(255, 205, 178, 0.25); /* Opacity for background */
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 5px;
+}
+.school-name {
+	color: #772f1a;
+	font-size: 30px;
+	font-weight: bold;
+}
+.school-course {
+	color: #495057;
+	font-size: 25px;
+	margin-bottom: 5px;
+	font-weight: bold;
 }
