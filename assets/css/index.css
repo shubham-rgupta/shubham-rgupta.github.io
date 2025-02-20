@@ -41,6 +41,16 @@
 		flex-direction: row;
 		align-items: center;
 	}
+	.skill-item {
+		background: white;
+		color: black;
+		padding: 10px 20px;
+		border-radius: 5px;
+		font-weight: bold;
+		transition: background 0.3s ease, transform 0.3s ease, color 0.3s ease;
+		cursor: pointer;
+		border: 1px solid #ccc;
+	}
 
 	.skill-item:hover {
 		background: #FF7A57;
@@ -69,14 +79,46 @@
 		gap: 15px;
 		padding: 10px 0;
 	}
-
-	.grid-item:hover {
-		transform: scale(1.05);
+	.grid-item {
+		background: white;
+		color: black;
+		padding: 10px;
+		border-radius: 5px;
+		text-align: center;
+		font-size: 18px;
+		font-weight: bold;
+		transition: background 0.3s ease, transform 0.3s ease, color 0.3s ease;
 	}
+		.grid-item:hover {
+			background: #FF7A57;
+			color: white;
+			transform: scale(1.05);
+		}
 }
 
 /* For mobile devices (max-width: 768px), set 2 columns */
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
+	.skill-item {
+		background: #FF7A57;
+		color: white;
+		padding: 10px 20px;
+		border-radius: 5px;
+		font-weight: bold;
+		transition: background 0.3s ease, transform 0.3s ease, color 0.3s ease;
+		cursor: pointer;
+		border: 1px solid #ccc;
+	}
+
+	.grid-item {
+		background: #FF7A57;
+		color: white;
+		padding: 10px;
+		border-radius: 5px;
+		text-align: center;
+		font-size: 18px;
+		font-weight: bold;
+		transition: background 0.3s ease, transform 0.3s ease, color 0.3s ease;
+	}
 	.responsibilities-grid {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr); /* 3 columns by default */
@@ -96,16 +138,7 @@
 	border-radius: 5px;
 }
 
-.skill-item {
-	background: white;
-	color: black;
-	padding: 10px 20px;
-	border-radius: 5px;
-	font-weight: bold;
-	transition: background 0.3s ease, transform 0.3s ease, color 0.3s ease;
-	cursor: pointer;
-	border: 1px solid #ccc;
-}
+
 
 .skill-row {
 	display: flex;
@@ -231,18 +264,4 @@
 	color: #777;
 	font-size: 14px;
 	margin-bottom: 10px;
-}
-
-
-
-
-.grid-item {
-	background: #FF7A57;
-	color: white;
-	padding: 10px;
-	border-radius: 5px;
-	text-align: center;
-	font-size: 18px;
-	font-weight: bold;
-	transition: background 0.3s ease, transform 0.3s ease, color 0.3s ease;
 }
