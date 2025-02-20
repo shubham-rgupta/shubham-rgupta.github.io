@@ -37,14 +37,9 @@
         transform: translate(-50%, -50%) scale(1);
     }
     .skill-row {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    }
-
-    .skill-item {
-    width: 80%; /* Makes items take up more space on mobile */
-    text-align: center;
-    }
+  }
 }
 	/* More Styles */
 	
