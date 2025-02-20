@@ -37,3 +37,35 @@
         transform: translate(-50%, -50%) scale(1);
     }
 }
+	
+	/* More Styles */
+	
+  .skill-item
+  {
+    background: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    border: 1px solid #ccc;
+  }
+  .skill-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  .skill-item:hover 
+  {
+    background: #FF7A57;
+    color: white;
+    transform: scale(1.1);
+  }
+  .skill-subtitle {
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: bold;
+  }
