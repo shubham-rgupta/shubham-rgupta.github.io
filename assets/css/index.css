@@ -1,231 +1,248 @@
-.btn-with-popup .title-popup{
-    display: none;
+.btn-with-popup .title-popup {
+	display: none;
 }
 
-.justify{
-    text-align: justify;
+.justify {
+	text-align: justify;
 }
 
-@media only screen and (min-width: 769px){
-    /* I'm Yours Popup */
-    .btn-with-popup {
-        position: relative;
-    }
+@media only screen and (min-width: 769px) {
+	/* I'm Yours Popup */
+	.btn-with-popup {
+		position: relative;
+	}
 
-    .btn-with-popup .title-popup {
-        position: absolute;
-        top: calc(50% + 0px);
-        left: 50%;
-        transform: translate(-50%, -50%) scale(0);
-        background-color: #343a40;
-        padding: 5px 10px;
-        height: 100%;
-        width: calc(100% + 100px);
-        border-radius: 10px;
-        transition: 0.2s;
-        visibility: hidden;
-        pointer-events: none;
-        transform-origin: center;
-        font-size: 15px;
-        line-height: 30px;
-        display: block;
-    }
+		.btn-with-popup .title-popup {
+			position: absolute;
+			top: calc(50% + 0px);
+			left: 50%;
+			transform: translate(-50%, -50%) scale(0);
+			background-color: #343a40;
+			padding: 5px 10px;
+			height: 100%;
+			width: calc(100% + 100px);
+			border-radius: 10px;
+			transition: 0.2s;
+			visibility: hidden;
+			pointer-events: none;
+			transform-origin: center;
+			font-size: 15px;
+			line-height: 30px;
+			display: block;
+		}
 
-    .btn-with-popup:hover .title-popup{
-        visibility: visible;
-        top: calc(50% - 45px);
-        transform: translate(-50%, -50%) scale(1);
-    }
+		.btn-with-popup:hover .title-popup {
+			visibility: visible;
+			top: calc(50% - 45px);
+			transform: translate(-50%, -50%) scale(1);
+		}
 
-    .skill-row {
-        flex-direction: row;
-        align-items: center;
-    }
-    .skill-item:hover {
-        background: #FF7A57;
-        color: white;
-        transform: scale(1.1);
-    }
-    /* Project title Hover Effect: Glow */
-    .project-title:hover {
-        transform: scale(1.05);
-        text-shadow: 0 0 10px rgba(255, 87, 87, 0.8);
-    }
+	.skill-row {
+		flex-direction: row;
+		align-items: center;
+	}
 
-    /* Project title Hover Effect: Glow */
-    .link-button:hover {
-        transform: scale(1.05);
-        text-shadow: 0 0 10px rgba(255, 87, 87, 0.8);
-        color: white;
-        text-decoration: none;
-    }
- 
+	.skill-item:hover {
+		background: #FF7A57;
+		color: white;
+		transform: scale(1.1);
+	}
+	/* Project title Hover Effect: Glow */
+	.project-title:hover {
+		transform: scale(1.05);
+		text-shadow: 0 0 10px rgba(255, 87, 87, 0.8);
+	}
 
-    /*Experience*/
-    .responsibilities-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
-        gap: 15px;
-        padding: 10px 0;
-    }
-    .grid-item:hover {
-        transform: scale(1.05);
-    }
+	/* Project title Hover Effect: Glow */
+	.link-button:hover {
+		transform: scale(1.05);
+		text-shadow: 0 0 10px rgba(255, 87, 87, 0.8);
+		color: white;
+		text-decoration: none;
+	}
+
+
+	/*Experience*/
+	.responsibilities-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
+		gap: 15px;
+		padding: 10px 0;
+	}
+
+	.grid-item:hover {
+		transform: scale(1.05);
+	}
 }
 
 /* For mobile devices (max-width: 768px), set 2 columns */
 @media (max-width: 768px) {
-    .responsibilities-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* 3 columns by default */
-        gap: 15px;
-        padding: 10px 0;
-    }
+	.responsibilities-grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr); /* 3 columns by default */
+		gap: 15px;
+		padding: 10px 0;
+	}
 }
-	/* Skills Styles */
-	
-    .skill-item
-    {
-        background: white;
-        color: black;
-        padding: 10px 20px;
-        border-radius: 5px;
-        font-weight: bold;
-        transition: background 0.3s ease, transform 0.3s ease, color 0.3s ease;
-        cursor: pointer;
-        border: 1px solid #ccc;
-    }
-    .skill-row {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        flex-wrap: wrap;
-        margin-top: 20px;
-    }
-    
-    .skill-subtitle {
-        margin-top: 40px;
-        font-size: 18px;
-        font-weight: bold;
-    }
+/* Skills Styles */
+.skill-card {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 15px;
+	border-left: 4px solid #FF7A57;
+	border-right: 4px solid #FF7A57;
+	background: rgba(255, 205, 178, 0.25); /* Opacity for background */
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 5px;
+}
 
-    /* Project Section */
-    .project {
-        margin-bottom: 40px;
-    }
+.skill-item {
+	background: white;
+	color: black;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-weight: bold;
+	transition: background 0.3s ease, transform 0.3s ease, color 0.3s ease;
+	cursor: pointer;
+	border: 1px solid #ccc;
+}
 
-    /* Masonry Gallery */
-    .gallery {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 15px;
-        padding: 10px;
-        justify-content: center;
-    }
+.skill-row {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	flex-wrap: wrap;
+	margin-top: 20px;
+}
 
-    /* Masonry Effect */
-    .gallery-item {
-        position: relative;
-        overflow: hidden;
-        border-radius: 10px;
-    }
+.skill-subtitle {
+	font-size: 25px;
+	font-weight: bold;
+	color: #772f1a;
+}
 
-    .gallery-item img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        cursor: pointer;
-        border-radius: 10px;
-    }
+/* Project Section */
+.project {
+	margin-bottom: 40px;
+}
 
-    .gallery-item:hover img {
-        transform: scale(1.1);
-        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
-    }
+/* Masonry Gallery */
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 15px;
+	padding: 10px;
+	justify-content: center;
+}
 
-    /* Project Title Animation */
-    .project-title {
-        font-size: 24px;
-        font-weight: bold;
-        position: relative;
-        opacity: 0;
-        transform: translateY(0);
-        animation: fadeInUp 0.8s ease-out forwards;
-        display: inline-block;
-        padding: 5px 15px;
-        background: linear-gradient(90deg, #FF8882, #FF5757);
-        color: white;
-        border-radius: 8px;
-        box-shadow: 0px 4px 10px rgba(255, 87, 87, 0.3);
-        transition: transform 0.3s ease, text-shadow 0.3s ease; 
-    }
-    .project-p{
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    .link-button {
-        position: relative;
-        opacity: 0;
-        animation: fadeInUp 0.8s ease-out forwards;
-        display: inline-block;
-        padding: 5px 15px;
-        background: #47D8E0;
-        color: white;
-        border-radius: 8px;
-        box-shadow: 0px 4px 10px rgba(255, 87, 87, 0.3);
-        transition: transform 0.3s ease, text-shadow 0.3s ease;
-    }
-    @keyframes fadeInUp {
-        from {
-            opacity: 0;
-        }
+/* Masonry Effect */
+.gallery-item {
+	position: relative;
+	overflow: hidden;
+	border-radius: 10px;
+}
 
-        to {
-            opacity: 1;
-        }
-    }
+	.gallery-item img {
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+		cursor: pointer;
+		border-radius: 10px;
+	}
+
+	.gallery-item:hover img {
+		transform: scale(1.1);
+		box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+	}
+
+/* Project Title Animation */
+.project-title {
+	font-size: 24px;
+	font-weight: bold;
+	position: relative;
+	opacity: 0;
+	transform: translateY(0);
+	animation: fadeInUp 0.8s ease-out forwards;
+	display: inline-block;
+	padding: 5px 15px;
+	background: linear-gradient(90deg, #FF8882, #FF5757);
+	color: white;
+	border-radius: 8px;
+	box-shadow: 0px 4px 10px rgba(255, 87, 87, 0.3);
+	transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.project-p {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.link-button {
+	position: relative;
+	opacity: 0;
+	animation: fadeInUp 0.8s ease-out forwards;
+	display: inline-block;
+	padding: 5px 15px;
+	background: #47D8E0;
+	color: white;
+	border-radius: 8px;
+	box-shadow: 0px 4px 10px rgba(255, 87, 87, 0.3);
+	transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
 
 
-    /* Work Experience*/
+/* Work Experience*/
 .job-title {
-    color: #495057;
-    font-size: 25px;
-    margin-bottom: 5px;
-    font-weight: bold;
+	color: #495057;
+	font-size: 25px;
+	margin-bottom: 5px;
+	font-weight: bold;
 }
 
 .company-name {
-    color: #772f1a;
-    font-size: 30px;
-    font-weight: bold;
+	color: #772f1a;
+	font-size: 30px;
+	font-weight: bold;
 }
-    .experience-card {
-        margin-bottom: 20px;
-        padding: 15px;
-        border-left: 4px solid #FF7A57;
-        border-right: 4px solid #FF7A57;
-        background: rgba(255, 205, 178, 0.25); /* Opacity for background */
-        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 5px;
-    }
-    
-    .experience-subtitle {
-        color: #777;
-        font-size: 14px;
-        margin-bottom: 10px;
-    }
 
-    
-    
+.experience-card {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 15px;
+	border-left: 4px solid #FF7A57;
+	border-right: 4px solid #FF7A57;
+	background: rgba(255, 205, 178, 0.25); /* Opacity for background */
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 5px;
+}
 
-    .grid-item {
-        background: #FF7A57;
-        color: white;
-        padding: 10px;
-        border-radius: 5px;
-        text-align: center;
-        font-size: 18px;
-        font-weight: bold;
-        transition: background 0.3s ease, transform 0.3s ease, color 0.3s ease;
-    }
+.experience-subtitle {
+	color: #777;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+
+
+
+.grid-item {
+	background: #FF7A57;
+	color: white;
+	padding: 10px;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	transition: background 0.3s ease, transform 0.3s ease, color 0.3s ease;
+}
