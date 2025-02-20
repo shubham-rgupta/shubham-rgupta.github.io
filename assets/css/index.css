@@ -36,7 +36,7 @@
         top: calc(50% - 45px);
         transform: translate(-50%, -50%) scale(1);
     }
-}
+
 	
 	/* More Styles */
 	
@@ -68,4 +68,5 @@
     margin-top: 40px;
     font-size: 18px;
     font-weight: bold;
+  }
   }
