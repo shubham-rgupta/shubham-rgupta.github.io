@@ -79,64 +79,91 @@
 			Over the years, I have developed a diverse range of games, from high-speed racing experiences and engaging board games to strategic challenges and hyper-casual games. This collection highlights my expertise in Unity3D, game mechanics, AI bot integration, multiplayer systems, and immersive game design. Each project showcases my commitment to crafting polished, engaging, and visually compelling experiences.<br>Explore the full list below to discover the variety of games I’ve created, each designed to challenge and entertain players in unique ways.
 		</p>
 
+		<!-- Dropdown Filter -->
+
+		<!-- Filter Bar -->
+
+		<div class="filter-bar">
+		    <label>
+		    	<input type="checkbox" id="all" value="all" checked onchange="toggleAll()">
+		    	<span class="custom-checkbox"></span> 
+		    	All
+			</label>
+		    <label>
+		    	<input type="checkbox" id="racing" value="racing" onchange="filterProjects()">
+		    	<span class="custom-checkbox"></span> 
+			    Racing
+			</label>
+		    <label>
+		    	<input type="checkbox" id="board" value="board" onchange="filterProjects()">
+		    	<span class="custom-checkbox"></span>
+			    Board
+			</label>
+		    <!-- <label>
+		    	<input type="checkbox" id="cricket" value="cricket" onchange="filterProjects()">
+		    	<span class="custom-checkbox"></span>
+			    Cricket
+			</label> -->
+		    <label>
+		    	<input type="checkbox" id="hypercasual" value="hypercasual" onchange="filterProjects()">
+		    	<span class="custom-checkbox"></span>
+			    Hypercasual
+			</label>
+		    <label>
+		    	<input type="checkbox" id="quiz" value="quiz" onchange="filterProjects()">
+		    	<span class="custom-checkbox"></span>
+			    Quiz
+			</label>
+		    <label>
+		    	<input type="checkbox" id="puzzle" value="puzzle" onchange="filterProjects()">
+		    	<span class="custom-checkbox"></span>
+			    Puzzle
+			</label>
+		</div>
+
+		<!------------------------------------------------------- End Dropdown Filter ------------------------------------------------------->
+
 		<section id="projects">
 
-			<!-- Start Project: Bubble Shooter Game -->
+			<!------------------------------------------------------- Project : H2O Game ------------------------------------------------------->
 
-			<div class="project">
-				<h3 class="project-title">Bubble Shooter</h3>
-
-				<div class="project-skill-group">
-						<div class="project-skill">Unity3D</div>
-						<div class="project-skill">Unity IAP</div>
-						<div class="project-skill">Google AdMob</div>
-						<div class="project-skill">Android</div>
-					</div>
-
-				<p class="project-p">
-					This Bubble Shooter game offers a classic and addictive gameplay experience with smooth mechanics and vibrant visuals. Players aim, shoot, and match bubbles to clear levels while enjoying engaging challenges. The game features Unity IAP, allowing players to buy boosters and power-ups, along with Google AdMob integration for monetization. With intuitive controls and rewarding progression, it delivers a fun and immersive casual gaming experience.
-				</p>
-			</div>
-			
-			<!-- End Project: Bubble Shooter Game -->
-
-			<!-- Start Project: Cricket Game -->
-
-			<div class="project">
-				<h3 class="project-title">Cricket Game</h3>
+			<div class="project racing">
+				<h3 class="project-title">H2O Boat Racing</h3>
 
 				<div>
-					<a href="https://allstargames.io/" target="_blank" class="link-button">
+					<a href="https://h2o.fabwelt.com/" target="_blank" class="link-button">
 						Website
 					</a>
-					<a href="https://play.google.com/store/apps/details?id=ipl.internationalpremierleague.cricketgames.cricket.games.real.stick.league.world.hitwicket.free.offline&pcampaignid=web_share" target="_blank" class="link-button">
+					<a href="https://play.google.com/store/apps/details?id=com.FabweltStudios.H2O" target="_blank" class="link-button">
 						PlayStore
 					</a>
 				</div>
 
 				<div class="project-skill-group">
 					<div class="project-skill">Unity3D</div>
-					<div class="project-skill">AppLovin Ads</div>
-					<div class="project-skill">Unity IAP</div>
+					<div class="project-skill">URP</div>
+					<div class="project-skill">Unity Shaders</div>
+					<div class="project-skill">NavMesh</div>
+					<div class="project-skill">Unity Addressables</div>
+					<div class="project-skill">Photon Fusion</div>
 					<div class="project-skill">Android</div>
 				</div>
 
 				<p class="project-p">
-					Developed a feature-rich single-player cricket game, incorporating realistic mechanics, immersive gameplay, Applovin ads integration, and in-app purchase functionality to enhance user engagement and monetization.
+					H2O Game is an exhilarating multiplayer boat racing game where up to six players compete in high-speed water races. 
+					Face off against real opponents or AI-powered bots on dynamic tracks filled with challenges. Master sharp turns, outmaneuver rivals, and experience smooth controls with engaging mechanics. Whether racing solo or with friends, every match is a thrilling test of speed and strategy.
 				</p>
 
 				<div class="gallery">
-					<div class="gallery-item"><img src="assets/imgs/Project/Cricket/1.jpg"></div>
-					<div class="gallery-item"><img src="assets/imgs/Project/Cricket/2.jpg"></div>
-					<div class="gallery-item"><img src="assets/imgs/Project/Cricket/3.jpg"></div>
+					<div class="gallery-item"><img src="assets/imgs/Project/H2O/1.png"></div>
+					<div class="gallery-item"><img src="assets/imgs/Project/H2O/2.png"></div>
+					<div class="gallery-item"><img src="assets/imgs/Project/H2O/3.png"></div>
 				</div>
 			</div>
 
-			<!-- End Project: Cricket Game -->
+			<!------------------------------------------------------- Project : Kart Game ------------------------------------------------------->
 
-			<!-- Start Project: Kart Game -->
-
-			<div class="project">
+			<div class="project racing">
 				<h3 class="project-title">3D Kart Racing</h3>
 
 				 <div>
@@ -170,11 +197,149 @@
 				</div>
 			</div>
 			
-			<!-- End Project: Kart Game -->
+			<!------------------------------------------------------- Project : Ludo 3D ------------------------------------------------------->
 
-			<!-- Start Project: Rocket Game -->
+			<div class="project board">
+				<h3 class="project-title">3D Ludo</h3>
 
-			<div class="project">
+				<div>
+					<a href="https://www.fabwelt.com/" target="_blank" class="link-button">
+						Website
+					</a>
+					<!-- <a href="https://play.google.com/store/apps/details?id=com.FabweltStudios.H2O" target="_blank" class="link-button">
+						PlayStore
+					</a> -->
+				</div>
+
+				<div class="project-skill-group">
+					<div class="project-skill">Unity3D</div>
+					<div class="project-skill">URP</div>
+					<div class="project-skill">Unity Shaders</div>
+					<div class="project-skill">Unity Addressables</div>
+					<div class="project-skill">Photon PUN2</div>
+					<div class="project-skill">Android</div>
+				</div>
+
+				<p class="project-p">
+					My 3D Ludo game brings the classic board game to life with immersive graphics and smooth gameplay.
+					Players can enjoy multiplayer matches with friends or challenge AI opponents.
+					With vibrant animations and intuitive controls, it offers a fun and engaging experience for all ages.
+				</p>
+				<div class="gallery">
+					<div class="gallery-item"><img src="assets/imgs/Project/Ludo/1.jpg"></div>
+					<div class="gallery-item"><img src="assets/imgs/Project/Ludo/2.jpg"></div>
+					<div class="gallery-item"><img src="assets/imgs/Project/Ludo/3.jpg"></div>
+				</div>
+			</div>
+
+			<!------------------------------------------------------- Project : Monowelt 3D ------------------------------------------------------->
+			
+			<div class="project board">
+				<h3 class="project-title">3D Monopoly</h3>
+
+				<div>
+					<a href="https://www.fabwelt.com/" target="_blank" class="link-button">
+						Website
+					</a>
+					<!-- <a href="https://play.google.com/store/apps/details?id=com.FabweltStudios.H2O" target="_blank" class="link-button">
+						PlayStore
+					</a> -->
+				</div>
+
+				<div class="project-skill-group">
+					<div class="project-skill">Unity3D</div>
+					<div class="project-skill">URP</div>
+					<div class="project-skill">Unity Shaders</div>
+					<div class="project-skill">Unity Addressables</div>
+					<div class="project-skill">Photon PUN2</div>
+					<div class="project-skill">Android</div>
+				</div>
+
+				<p class="project-p">
+					My 3D Monopoly game brings the classic board game to life with stunning visuals and
+					interactive gameplay. Players can trade, build, and strategize in a fully immersive 3D environment.
+					With multiplayer support, it offers a fun and competitive experience for friends and family.
+				</p>
+				
+				<div class="gallery">
+					<div class="gallery-item"><img src="assets/imgs/Project/Monopoly/1.png"></div>
+					<div class="gallery-item"><img src="assets/imgs/Project/Monopoly/2.png"></div>
+					<div class="gallery-item"><img src="assets/imgs/Project/Monopoly/3.png"></div>
+				</div>
+			</div>
+
+			<!------------------------------------------------------- Project : Cricket Game ------------------------------------------------------->
+
+			<div class="project hypercasual">
+				<h3 class="project-title">Cricket Game</h3>
+
+				<div>
+					<a href="https://allstargames.io/" target="_blank" class="link-button">
+						Website
+					</a>
+					<a href="https://play.google.com/store/apps/details?id=ipl.internationalpremierleague.cricketgames.cricket.games.real.stick.league.world.hitwicket.free.offline&pcampaignid=web_share" target="_blank" class="link-button">
+						PlayStore
+					</a>
+				</div>
+
+				<div class="project-skill-group">
+					<div class="project-skill">Unity3D</div>
+					<div class="project-skill">AppLovin Ads</div>
+					<div class="project-skill">Unity IAP</div>
+					<div class="project-skill">Android</div>
+				</div>
+
+				<p class="project-p">
+					Developed a feature-rich single-player cricket game, incorporating realistic mechanics, immersive gameplay, Applovin ads integration, and in-app purchase functionality to enhance user engagement and monetization.
+				</p>
+
+				<div class="gallery portrait">
+					<div class="gallery-item"><img src="assets/imgs/Project/Cricket/1.jpg"></div>
+					<div class="gallery-item"><img src="assets/imgs/Project/Cricket/2.jpg"></div>
+					<div class="gallery-item"><img src="assets/imgs/Project/Cricket/3.jpg"></div>
+				</div>
+			</div>
+
+			<!------------------------------------------------------- Project : Tile Stack -------------------------------------------------------->
+
+			<div class="project hypercasual">
+				<h3 class="project-title">Tile Stack Battle</h3>
+
+				<div class="project-skill-group">
+						<div class="project-skill">Unity3D</div>
+						<div class="project-skill">Android</div>
+					</div>
+
+				<p class="project-p">
+					This hyper-casual game features an exciting upgrade system where players collect and stack tiles beneath their character to level up. As they gather more tiles, their player grows taller, unlocking stronger weapons like a pistol, machine gun, rocket launcher, and eventually a powerful tank. Each upgrade enhances combat abilities, making gameplay more dynamic and action-packed. With smooth controls and satisfying progression, the game delivers a fun and addictive experience.
+				</p>
+				<div class="gallery portrait">
+					<div class="gallery-item"><img src="assets/imgs/Project/Tile/1.jpg"></div>
+					<div class="gallery-item"><img src="assets/imgs/Project/Tile/2.jpg"></div>
+					<div class="gallery-item"><img src="assets/imgs/Project/Tile/3.jpg"></div>
+				</div>
+			</div>
+
+			<!------------------------------------------------------- Project : Bubble Shooter ------------------------------------------------------->
+
+			<div class="project hypercasual">
+				<h3 class="project-title">Bubble Shooter</h3>
+
+				<div class="project-skill-group">
+						<div class="project-skill">Unity3D</div>
+						<div class="project-skill">Unity IAP</div>
+						<div class="project-skill">Google AdMob</div>
+						<div class="project-skill">Android</div>
+					</div>
+
+				<p class="project-p">
+					This Bubble Shooter game offers a classic and addictive gameplay experience with smooth mechanics and vibrant visuals. Players aim, shoot, and match bubbles to clear levels while enjoying engaging challenges. The game features Unity IAP, allowing players to buy boosters and power-ups, along with Google AdMob integration for monetization. With intuitive controls and rewarding progression, it delivers a fun and immersive casual gaming experience.
+				</p>
+			</div>
+			
+			<!------------------------------------------------------- Project : Rocket Game ------------------------------------------------------->
+
+			<div class="project hypercasual">
 				<h3 class="project-title">3D Rocket Simulator</h3>
 
 				<div class="project-skill-group">
@@ -188,13 +353,12 @@
 				</p>
 
 			</div>
+
+			<!------------------------------------------------------- Project : Puzzle -------------------------------------------------------->
 			
-			<!-- End Project: Rocket Game -->
 
-			<!-- Start Project: Hypercasual Game -->
-
-			<div class="project">
-				<h3 class="project-title">Tile Stack Battle</h3>
+			<div class="project puzzle">
+				<h3 class="project-title">Puzzle Game</h3>
 
 				<div class="project-skill-group">
 						<div class="project-skill">Unity3D</div>
@@ -202,22 +366,56 @@
 					</div>
 
 				<p class="project-p">
-					This hyper-casual game features an exciting upgrade system where players collect and stack tiles beneath their character to level up. As they gather more tiles, their player grows taller, unlocking stronger weapons like a pistol, machine gun, rocket launcher, and eventually a powerful tank. Each upgrade enhances combat abilities, making gameplay more dynamic and action-packed. With smooth controls and satisfying progression, the game delivers a fun and addictive experience.
+					This engaging puzzle game is designed to make learning fun for kids! Players solve jigsaw puzzles by joining pieces of different images of famous places around the world. Once they complete a level, they unlock a short, informative description of the place, helping them learn about its history, culture, and significance. With vibrant visuals and an interactive learning experience, this game encourages curiosity and knowledge retention in a playful way.
 				</p>
+
+			</div>
+
+			<!------------------------------------------------------- Project : Quiz Game ------------------------------------------------------->
+
+			<div class="project quiz">
+				<h3 class="project-title">Math & Geography Quiz Adventure</h3>
+
+				<div>
+					<a href="https://play.google.com/store/apps/details?id=com.KiaranGames.PaperPlaneAdventuresMathsGeography" target="_blank" 
+					class="link-button">
+						PlayStore
+					</a>
+				</div>
+
+				<div class="project-skill-group">
+					<div class="project-skill">Unity3D</div>
+					<div class="project-skill">Google AdMob</div>
+					<div class="project-skill">Android</div>
+				</div>
+
+				<p class="project-p">
+					This interactive learning game makes education exciting for kids! Players start by solving a multiple-choice math question. If they answer correctly, they unlock a geography question to test their knowledge further. With each correct answer, they earn coins, which can be used to unlock fun and colorful stickers as rewards. Designed to encourage learning through play, this game helps kids strengthen their math and geography skills while keeping them engaged with exciting rewards!
+				</p>
+
 				<div class="gallery">
-					<div class="gallery-item"><img src="assets/imgs/Project/Tile/1.jpg"></div>
-					<div class="gallery-item"><img src="assets/imgs/Project/Tile/2.jpg"></div>
-					<div class="gallery-item"><img src="assets/imgs/Project/Tile/3.jpg"></div>
+					<div class="gallery-item"><img src="assets/imgs/Project/Quiz/1.png"></div>
+					<div class="gallery-item"><img src="assets/imgs/Project/Quiz/2.png"></div>
+					<div class="gallery-item"><img src="assets/imgs/Project/Quiz/3.png"></div>
 				</div>
 			</div>
-			
-			<!-- End Project: Hypercasual Game -->
 
+			<!----------------------------------------------------------------------------------------------------------------------------------------->
 		</section>
 	</div>
 
 </section>
 <!-- End All Projects -->
+
+<section class="under-construction">
+    <div class="animation">
+	    <div class="one spin-one"></div>
+	    <div class="two spin-two"></div>
+	    <div class="three spin-one"></div>
+	</div>
+    <h2 class="construction-text">Other Projects are Under Construction</h2>
+</section>
+
 <!-- core scripts -->
 <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
 <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
