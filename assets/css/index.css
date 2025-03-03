@@ -611,7 +611,7 @@ html{
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background-color: red;
+    background-color: #ff7a57;
     opacity: 0.6;
     top: 0;
     left: 0;
@@ -632,3 +632,5 @@ html{
       opacity: 0.6;
     }
   }
+
+  
